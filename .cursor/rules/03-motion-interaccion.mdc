@@ -1,0 +1,29 @@
+---
+description: "Solicítala al animar, definir transiciones, gestos o el módulo src/motion. Lee Reglas-Motion.md. No maquetes páginas ni toques datos."
+globs:
+  - "src/motion/**/*.ts"
+  - "src/motion/**/*.tsx"
+  - "src/motion/**/*.css"
+alwaysApply: false
+---
+
+# Motion e interacción
+
+Antes de editar, obedece el ticket y `brain/02_Specs-Frontend/Reglas-Motion.md`.
+
+- El rol del ticket es `motion` (también vale `motion-interaccion`).
+- Exporta desde `src/motion/` los gestos de `Reglas-Motion.md` con `framer-motion` y el spring `{ type: "spring", stiffness: 300, damping: 30 }`.
+- Respeta `prefers-reduced-motion`. No añadas otra librería de animación.
+- Los datos salen de `src/mocks/portfolio.mock.ts` salvo que el ticket nombre otro import.
+- No cambies colores, tipografía ni la estructura de las páginas.
+
+## Prohibido
+
+- Leer `brain/03_Specs-Backend/**`.
+- Editar `src/lib/**`, `src/actions/**`, `src/app/api/**` o `src/types/contracts.ts`.
+- Animar `width`, `height`, `top`, `left`, `margin`, `box-shadow` o `filter`.
+
+```tsx
+// Mal: <motion.div transition={{ duration: 0.8, bounce: 0.4 }} />
+// Bien: el spring 300/30 exportado por src/motion
+```

@@ -1,0 +1,26 @@
+---
+description: "Solicítala al editar tokens, tipografía o layout normativo en brain/02_Specs-Frontend/Sistema-Diseno.md. No escribas CSS ni componentes."
+globs:
+  - "brain/02_Specs-Frontend/Sistema-Diseno.md"
+  - "brain/02_Specs-Frontend/Sistema-Diseno-propuesta.md"
+alwaysApply: false
+---
+
+# Design system
+
+Antes de editar, obedece el ticket y `brain/06_Especialistas/Design-System.md`.
+
+- El rol del ticket es `design-system`.
+- Escribe solo en `archivos_permitidos`.
+- Si la nota está `bloqueado`, no la cambies sin que el ticket y una ADR lo autoricen.
+- Documenta tokens concretos (valor + uso). No inventes un segundo acento ni bento.
+
+## Prohibido
+
+- `src/**`, motion de producto, copy de casos, contratos, ADR.
+- Ampliar el stack de fuentes o librerías: eso vuelve al orquestador.
+
+```md
+# Mal: tocar globals.css porque «el token no se ve»
+# Bien: dejar el valor en Sistema-Diseno.md y devolver el CSS a ui-layout
+```

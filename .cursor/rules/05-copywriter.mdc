@@ -1,0 +1,28 @@
+---
+description: "Solicítala al redactar casos de estudio, la portada o microcopy en brain/04_Contenido. Lee Guia-Estilo-Copy.md. No escribas código."
+globs:
+  - "brain/04_Contenido/**/*.md"
+  - "brain/04_Contenido/**/*.mdx"
+alwaysApply: false
+---
+
+# Copywriter
+
+Antes de editar, obedece el ticket y `brain/04_Contenido/Guia-Estilo-Copy.md`.
+
+- El rol del ticket es `copywriter`.
+- Escribe en español, en primera persona, con problema, enfoque y resultado.
+- Cada caso nombra el impacto de negocio y la tecnología solo si cambió ese impacto.
+- El frente YAML usa las claves del esquema que el ticket enlace. Si no está enlazado, no inventes campos.
+- Por defecto el archivo es `.md`. `.mdx` solo si el ticket lo autoriza.
+
+## Prohibido
+
+- Editar `src/**`, reglas, contratos o specs de otros roles.
+- Leer `brain/03_Specs-Backend/**` o `brain/02_Specs-Frontend/**` salvo que el ticket los ponga en `contexto_lectura`.
+- Cambiar `Guia-Estilo-Copy.md` mientras siga `bloqueado`.
+
+```md
+# Mal: «Solución innovadora y escalable para impulsar sinergias»
+# Bien: «El alta tardaba cuatro días. El formulario pasó a uno.»
+```

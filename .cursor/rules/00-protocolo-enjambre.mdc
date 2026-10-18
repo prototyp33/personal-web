@@ -1,0 +1,29 @@
+---
+description: Protocolo del enjambre. Obliga a trabajar sobre un ticket con scope lock, a no salir de sus archivos permitidos y a responder en español.
+alwaysApply: true
+---
+
+# Protocolo del enjambre
+
+La bóveda `brain/` es el contexto durable. `00_Tareas` ordena el trabajo. `99_Borradores` no se lee.
+
+- Responde siempre en español.
+- Antes de actuar, lee `brain/00_MOC/INDEX.md` y `brain/01_Arquitectura/Registro-ADR.md`. No leas el resto de la bóveda «por si acaso». Una ADR aceptada no se deshace desde un ticket de implementación.
+- Toda implementación ocurre sobre un ticket `brain/00_Tareas/T-*.md` que haya creado el orquestador, copiado de `_PLANTILLA_TICKET.md`. Sin ticket, para y pide `/orquestar` en la pestaña `[0] Orquestador`. `_PLANTILLA_TICKET.md` no es un ticket.
+- Del ticket, el ejecutor solo escribe `estado`, las casillas de `## Criterio de aceptación`, `## Resultado`, `## Notas de cierre` y `## ADR generado`. Aunque `brain/**` esté prohibido, esas zonas del ticket adjunto sí se escriben. El resultado es una sola casilla: Aprobado o Devuelto al Orquestador. `## ADR generado` queda en `Ninguna.` salvo una decisión estructural (ADR-011).
+- Solo el orquestador crea tickets y edita `src/types/contracts.ts` y `src/mocks/portfolio.mock.ts`. Un ejecutor no planifica el siguiente ticket.
+- Con un ticket en la mano, el ejecutor hace como máximo tres lecturas: el ticket, la regla de su rol y `contexto_lectura`. La siguiente acción es escribir `primer_archivo`. No explora `node_modules`, no relee la bóveda y no redacta un plan. Si esos archivos ya existen, la siguiente acción es `npm run verify`.
+- Si `dependencias` nombra un ticket que no está `completado`, no empieces.
+- `archivos_prohibidos` es una prohibición, no un permiso de escritura. El control es `npm run scope -- <ticket>`: compara creados, modificados, borrados y renombrados, también en staging, con las rutas del ticket. Si falla, la entrega no se acepta. Reglas de agentes, `scripts/**`, configuración del linter, `package.json` y lockfiles quedan fuera de un ticket funcional aunque el ticket los liste.
+- Edita solo `archivos_permitidos`. `archivos_prohibidos` no se escribe aunque esté en `contexto_lectura`.
+- En serie hay un solo checkout y un solo ticket `en_progreso`, con el árbol limpio al empezar. En paralelo, una rama `ticket/T-NN` y un worktree por ticket. Integra el orquestador. El worktree aísla archivos de trabajo; no sustituye al control del diff.
+- De la bóveda, lee el ticket, `contexto_lectura` y la spec de tu rol. Nada más.
+- `estado: bloqueado` en una spec se obedece. En un ticket, `bloqueado`, `devuelto` y `completado` no se ejecutan. `devuelto` vuelve a `[0] Orquestador`.
+- Solo el orquestador escribe `brain/01_Arquitectura/Registro-ADR.md` y `brain/01_Arquitectura/CHANGELOG.md`. El registro no acumula un apunte por ticket.
+- `npm run verify` tiene dos intentos. El primero que falla se corrige una vez, usando el error literal de la terminal, dentro de `archivos_permitidos`. Si el segundo también falla, el ejecutor se detiene: no sigue editando el producto, marca `## Resultado` como Devuelto al Orquestador, copia el error en el motivo, pasa `estado` a `devuelto` y no ejecuta `git reset --hard` ni `git checkout .`. El árbol lo restaura quien opera el repo, y el orquestador parte el ticket en dos.
+- No leas `brain/99_Borradores/**` ni `brain/.obsidian/**`. Excepción: `/ingerir` puede leer solo los archivos de `99_Borradores` que el mensaje nombre o adjunte.
+
+```md
+# Mal: editar contracts.ts desde un ticket de UI porque el tipo «no encaja»
+# Bien: parar y devolver el cambio al orquestador
+```

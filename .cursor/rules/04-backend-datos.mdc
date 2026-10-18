@@ -1,0 +1,30 @@
+---
+description: "Solicítala al escribir parseo Markdown/MDX, validación o Server Actions. Lee Esquema-Datos.md. No edites componentes ni estilos."
+globs:
+  - "src/lib/**/*.ts"
+  - "src/actions/**/*.ts"
+  - "src/app/api/**/*.ts"
+alwaysApply: false
+---
+
+# Backend y datos
+
+Antes de editar, obedece el ticket y `brain/03_Specs-Backend/Esquema-Datos.md`.
+
+- El rol del ticket es `backend` (también vale `backend-datos`).
+- El parser devuelve `ProjectCaseStudy`. Un caso publicado e inválido falla el build.
+- `.mdx` sin componente permitido es un error, no un atajo.
+- Los límites del contacto salen de `CONTACT_LIMITS`. Los mensajes de error van en español.
+- No persistas envíos y no añadas base de datos.
+
+## Prohibido
+
+- Editar `src/components/**`, `src/app/**/*.tsx`, `src/motion/**` o cualquier CSS.
+- Leer `brain/02_Specs-Frontend/**` para copiar tokens o decidir estilos.
+- Redefinir o editar `src/types/contracts.ts`.
+- Cambiar una nota `bloqueado`.
+
+```ts
+// Mal: devolver un objeto suelto y pintar HTML de error
+// Bien: ProjectCaseStudy o { ok: false, field, message }
+```

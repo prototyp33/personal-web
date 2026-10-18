@@ -1,0 +1,31 @@
+---
+description: "Solicítala al maquetar React y Tailwind: páginas, componentes y layout. Lee Sistema-Diseno.md. No definas animaciones ni lógica de servidor."
+globs:
+  - "src/components/**/*.tsx"
+  - "src/app/**/*.tsx"
+  - "src/app/**/*.css"
+  - "src/components/**/*.css"
+alwaysApply: false
+---
+
+# UI y layout
+
+Antes de editar, obedece el ticket y `brain/02_Specs-Frontend/Sistema-Diseno.md`.
+
+- Implementa solo ítems del ticket con rol `ui-layout`.
+- Tras leer el ticket y `Sistema-Diseno.md`, escribe `primer_archivo`. No explores `node_modules` ni el resto de `src/`.
+- Usa sus tokens, tipografía y layout. No inventes colores, fuentes ni medidas.
+- Importa los tipos desde `src/types/contracts.ts`. No los redefinas ni edites.
+- Los textos visibles siguen `contexto_lectura`. Si el ticket no enlaza la guía de copy, no reescribas la voz.
+- Sin `motion`, sin `transition` propio y sin `framer-motion` en el componente. El movimiento entra por `src/motion/`.
+
+## Prohibido
+
+- Leer `brain/03_Specs-Backend/**` y `brain/02_Specs-Frontend/Reglas-Motion.md`.
+- Escribir en `src/lib/**`, `src/actions/**`, `src/app/api/**` o `src/motion/**`.
+- Cambiar una nota `bloqueado`.
+
+```tsx
+// Mal: className="bg-violet-500 duration-700" y un tipo Project local
+// Bien: tokens de Sistema-Diseno.md y ProjectCaseStudy importado del contrato
+```

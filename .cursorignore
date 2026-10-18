@@ -1,0 +1,5 @@
+# Configuración local de Obsidian. No forma parte del contexto.
+brain/.obsidian/**
+
+# Notas en sucio. No deben entrar en el contexto de los agentes.
+brain/99_Borradores/**
