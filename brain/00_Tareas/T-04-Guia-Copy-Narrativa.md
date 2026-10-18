@@ -2,7 +2,7 @@
 id: T-04
 titulo: "Guía de copy con narrativa de casos"
 rol_asignado: copywriter
-estado: pendiente
+estado: completado
 aislamiento: serie
 dependencias: []
 contexto_lectura:
@@ -46,13 +46,13 @@ Fuera de alcance:
 
 ## Criterio de aceptación
 
-- [ ] Siguen siendo obligatorios y en este orden: `## Problema`, `## Arquitectura`, `## Métricas de Impacto`.
-- [ ] La guía exige titular-resultado (verbo + cifra de negocio) en `title` / portada del caso, y TL;DR narrativo repartido en esos tres bloques (problema + lo que hice yo; enfoque/decisiones; resultado con baseline).
-- [ ] Orden de métricas: negocio → sistema → modelo; plantillas de frase alineadas con la propuesta; proyección no se escribe como resultado.
-- [ ] Exige declarar límites/autoría dentro del copy permitido (sin inventar encabezados nuevos del parser).
-- [ ] Frontmatter: `rol: copywriter`, `estado: bloqueado`, resumen actualizado.
-- [ ] `Guia-Estilo-Copy-propuesta.md` indica que ADR-015 la absorbió en lo aplicable y ya no manda.
-- [ ] `npm run verify` termina en cero.
+- [x] Siguen siendo obligatorios y en este orden: `## Problema`, `## Arquitectura`, `## Métricas de Impacto`.
+- [x] La guía exige titular-resultado (verbo + cifra de negocio) en `title` / portada del caso, y TL;DR narrativo repartido en esos tres bloques (problema + lo que hice yo; enfoque/decisiones; resultado con baseline).
+- [x] Orden de métricas: negocio → sistema → modelo; plantillas de frase alineadas con la propuesta; proyección no se escribe como resultado.
+- [x] Exige declarar límites/autoría dentro del copy permitido (sin inventar encabezados nuevos del parser).
+- [x] Frontmatter: `rol: copywriter`, `estado: bloqueado`, resumen actualizado.
+- [x] `Guia-Estilo-Copy-propuesta.md` indica que ADR-015 la absorbió en lo aplicable y ya no manda.
+- [x] `npm run verify` termina en cero.
 
 ## Archivos permitidos
 
@@ -85,7 +85,7 @@ Fuera de alcance:
 
 Una sola casilla. La rellena el ejecutor.
 
-- [ ] Aprobado
+- [x] Aprobado
 - [ ] Devuelto al Orquestador
 
 Motivo de la devolución:
@@ -96,7 +96,7 @@ Motivo de la devolución:
 
 Una o dos líneas de lo que quedó hecho. No es una ADR. `/destilar` la copia al changelog.
 
--
+- Guía de copy con narrativa en tres bloques (ADR-015); la propuesta queda como historial.
 
 ## ADR generado
 
