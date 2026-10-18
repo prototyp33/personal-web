@@ -2,6 +2,8 @@
 
 Contexto del enjambre. El trabajo entra por un ticket, no por esta nota.
 
+Entrada humana del repo: [README](../../README.md).
+
 ## Carpetas
 
 - `00_MOC/` — este mapa y el roadmap de épicas.
@@ -19,7 +21,9 @@ Contexto del enjambre. El trabajo entra por un ticket, no por esta nota.
 - [Roadmap](ROADMAP.md)
 - [Plantilla de ticket](../00_Tareas/_PLANTILLA_TICKET.md)
 - [Diseño del sistema](../01_Arquitectura/Diseno-Sistema.md)
+- [Superficies y rutas](../01_Arquitectura/Superficies-y-Rutas.md)
 - [Registro de ADR](../01_Arquitectura/Registro-ADR.md)
+- [Decisión · Knowledge repo independiente](../01_Arquitectura/Decision-Knowledge-Repo-Independiente.md)
 - [Changelog](../01_Arquitectura/CHANGELOG.md)
 - [Sistema de diseño](../02_Specs-Frontend/Sistema-Diseno.md)
 - [Reglas de motion](../02_Specs-Frontend/Reglas-Motion.md)
@@ -37,9 +41,11 @@ Contexto del enjambre. El trabajo entra por un ticket, no por esta nota.
 
 ## Investigación ingerida
 
+Historial de investigación. **No mandan:** la voz normativa es [Guía de estilo](../04_Contenido/Guia-Estilo-Copy.md) (T-04 / ADR-015); los tokens mandan en [Sistema de diseño](../02_Specs-Frontend/Sistema-Diseno.md) (T-03 / ADR-014).
+
 - [Investigación de portfolios](../02_Specs-Frontend/Investigacion-Portfolios.md)
-- [Narrativa de casos](../02_Specs-Frontend/Narrativa-Casos.md)
-- [Sistema de diseño · propuesta](../02_Specs-Frontend/Sistema-Diseno-propuesta.md)
-- [Guía de copy · propuesta](../04_Contenido/Guia-Estilo-Copy-propuesta.md)
+- [Narrativa de casos](../02_Specs-Frontend/Narrativa-Casos.md) — absorbida en lo aplicable por la guía
+- [Sistema de diseño · propuesta](../02_Specs-Frontend/Sistema-Diseno-propuesta.md) — absorbida por ADR-014
+- [Guía de copy · propuesta](../04_Contenido/Guia-Estilo-Copy-propuesta.md) — absorbida por ADR-015
 
 `estado: bloqueado` se obedece. El ticket dice qué archivos se tocan y qué notas se leen. `/ingerir` es la única vía que puede leer archivos concretos de `99_Borradores/` para destilarlos.
