@@ -92,7 +92,7 @@ Fuera de alcance:
 
 Una sola casilla. La rellena el ejecutor.
 
-- [ ] Aprobado
+- [x] Aprobado
 - [ ] Devuelto al Orquestador
 
 Motivo de la devolución:
@@ -103,7 +103,7 @@ Motivo de la devolución:
 
 Una o dos líneas de lo que quedó hecho. No es una ADR. `/destilar` la copia al changelog.
 
--
+- Parser `getCaseStudies` aceptado con scope tras baseline git; la portada sigue en el mock.
 
 ## ADR generado
 
