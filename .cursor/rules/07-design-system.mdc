@@ -2,7 +2,7 @@
 description: "Solicítala al editar tokens, tipografía o layout normativo en brain/02_Specs-Frontend/Sistema-Diseno.md. No escribas CSS ni componentes."
 globs:
   - "brain/02_Specs-Frontend/Sistema-Diseno.md"
-  - "brain/02_Specs-Frontend/Sistema-Diseno-propuesta.md"
+  - "brain/02_Specs-Frontend/Reglas-Motion.md"
 alwaysApply: false
 ---
 

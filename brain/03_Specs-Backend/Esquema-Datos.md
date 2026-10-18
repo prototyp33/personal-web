@@ -1,12 +1,16 @@
 ---
+tipo: spec
 rol: backend
 estado: bloqueado
+epica: E2
 resumen: Modelos publicados, lectura local con gray-matter y contrato de la Server Action de contacto.
 ---
 
 # Esquema de datos
 
 Los tipos normativos están en `src/types/contracts.ts`. Esta nota fija el origen de cada modelo. Si un campo cambia, primero cambia el contrato en un ticket del orquestador.
+
+Metadatos del enjambre vs CMS: [Frontmatter YAML](../01_Arquitectura/Frontmatter-YAML.md). Los casos usan **solo** el esquema B (claves en español abajo). Sin hashtags `#tag` sueltos; sin `estado`/`epica`/`tipo` de agentes.
 
 ## Origen de cada modelo
 

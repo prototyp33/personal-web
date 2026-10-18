@@ -4,4 +4,7 @@ out/
 *.tsbuildinfo
 brain/.obsidian/
 brain/99_Borradores/
+# Bóvedas Obsidian abiertas por error en la raíz del repo (la bóveda real es brain/)
 Personal website/
+project vaut/
+project vault/

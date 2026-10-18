@@ -1,6 +1,8 @@
 ---
+tipo: adr
 rol: orquestador
 estado: bloqueado
+epica: E0
 resumen: RAG, MCP y Grok viven fuera de este portfolio; repo independiente ai-knowledge-repo. ADR-003 no cambia.
 ---
 

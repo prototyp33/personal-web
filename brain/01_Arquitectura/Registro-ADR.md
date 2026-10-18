@@ -119,5 +119,5 @@ Si el ticket no introdujo una decisión estructural, no se inventa una ADR.
 
 - **Estado:** aceptada
 - **Contexto:** la narrativa ingerida pide TL;DR tipado, tira de métricas y secciones extra que no caben en `ProjectCaseStudy`.
-- **Decisión:** **No** se amplía `ProjectCaseStudy` en esta fase. Se mantienen `problem`, `approach` y `outcome` mapeados a Problema / Arquitectura / Métricas de Impacto. La voz y el orden editorial se adoptan en la guía de copy y en [Narrativa-Casos.md](../02_Specs-Frontend/Narrativa-Casos.md); el copywriter los mete dentro de esos tres bloques. Figura interactiva y campos TL;DR tipados esperan otro ADR.
+- **Decisión:** **No** se amplía `ProjectCaseStudy` en esta fase. Se mantienen `problem`, `approach` y `outcome` mapeados a Problema / Arquitectura / Métricas de Impacto. La voz y el orden editorial se adoptan en la [guía de copy](../04_Contenido/Guia-Estilo-Copy.md) (la narrativa ingerida quedó jubilada en `99_Borradores/`); el copywriter los mete dentro de esos tres bloques. Figura interactiva y campos TL;DR tipados esperan otro ADR.
 - **Consecuencias:** el parser y el mock no cambian por esta decisión. E1 puede avanzar sin tocar `contracts.ts`.

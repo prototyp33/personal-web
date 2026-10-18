@@ -1,8 +1,11 @@
 ---
+tipo: ticket
 id: T-00
 titulo: "Título corto de la tarea"
-rol_asignado: ui-layout # orquestador | copywriter | design-system | ui-layout | motion | backend | qa
-estado: pendiente # pendiente | en_progreso | completado | devuelto | bloqueado
+rol_asignado: ui-layout # cumple el «rol» del esquema A; no renombrar
+estado: pendiente # pendiente | en_progreso | completado | devuelto
+epica: E0 # E0 | E1 | E2 | E3 | E4 | E5
+resumen: "Una línea: qué entrega este ticket."
 aislamiento: serie # serie | worktree. worktree no es un permiso de escritura.
 dependencias: [] # No ejecutar hasta que cada id esté completado
 contexto_lectura:

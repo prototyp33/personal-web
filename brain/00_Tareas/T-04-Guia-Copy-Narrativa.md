@@ -34,7 +34,7 @@ comando_verificacion: "npm run verify"
 
 ## Objetivo
 
-`Guia-Estilo-Copy.md` incorpora la voz y el orden de [Narrativa-Casos](../02_Specs-Frontend/Narrativa-Casos.md) **dentro** de los tres bloques del parser (ADR-015). Queda `estado: bloqueado`. La propuesta se marca como absorbida. No escribe casos todavía.
+`Guia-Estilo-Copy.md` incorpora la voz y el orden de Narrativa-Casos (jubilada en `99_Borradores/`, sin enlace al núcleo) **dentro** de los tres bloques del parser (ADR-015). Queda `estado: bloqueado`. La propuesta se marca como absorbida. No escribe casos todavía.
 
 Avanza E1 sin cerrarla.
 

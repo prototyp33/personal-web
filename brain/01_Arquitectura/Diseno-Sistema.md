@@ -22,7 +22,7 @@ Estas versiones están fijadas en `package.json`, sin rango. Otro paquete de UI,
 | `lucide-react` | 1.57.0 | Iconos. No mezclar otro set |
 | `gray-matter` | 4.0.3 | Frente YAML de `brain/04_Contenido` |
 
-La puerta de salida de un ticket de código es `npm run verify`: `tsc --noEmit` y `eslint . --max-warnings=0`. Hace falta Node `>=20.9.0`. Next 16.4.1 ya no trae el subcomando `next lint`.
+La puerta de salida de un ticket de código es `npm run verify`: `tsc --noEmit`, `eslint . --max-warnings=0` y `vault-check` (casos Markdown vía `getCaseStudies()`, sin `[[wikilinks]]` en `Casos-Estudio/`, specs con `estado: bloqueado`). Hace falta Node `>=20.9.0` (puesto de mando: 22 vía `.nvmrc`). Next 16.4.1 ya no trae el subcomando `next lint`.
 
 ## Estructura de carpetas
 

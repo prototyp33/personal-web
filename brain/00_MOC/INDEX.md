@@ -1,25 +1,31 @@
 # Mapa de la bóveda
 
-Contexto del enjambre. El trabajo entra por un ticket, no por esta nota.
+`brain/` no es un wiki libre. Tres roles: contexto mínimo para Cursor, máquina de estados del enjambre y CMS headless. Detalle: [Propósito de la bóveda](../01_Arquitectura/Proposito-de-la-Boveda.md).
 
-Entrada humana del repo: [README](../../README.md).
+El trabajo de producto entra por un ticket, no por esta nota. Entrada humana del repo: [README](../../README.md).
 
-## Carpetas
+## Estructura limpia (7 cajas)
 
-- `00_MOC/` — este mapa y el roadmap de épicas.
-- `00_Tareas/` — tickets atómicos con la plantilla fija. `_PLANTILLA_TICKET.md` no se ejecuta.
-- `01_Arquitectura/` — stack, carpetas, flujo de estado, ADR y changelog.
-- `02_Specs-Frontend/` — tokens, tipografía, layout y físicas de animación.
-- `03_Specs-Backend/` — datos, CMS en Markdown/MDX y Server Actions.
-- `04_Contenido/` — voz y casos de estudio publicables.
-- `05_Calidad/` — accesibilidad, SEO, rendimiento y tipado.
-- `06_Especialistas/` — specs de roles añadidos; [Design system](../06_Especialistas/Design-System.md).
-- `99_Borradores/` — notas fuera de contexto. Ignoradas.
+Ningún archivo durable fuera de estas carpetas. Inventario normativo en [Propósito · composición](../01_Arquitectura/Proposito-de-la-Boveda.md#composición-estructura-limpia).
 
-## Notas
+| Carpeta | Rol | Contenido permitido |
+| --- | --- | --- |
+| `00_MOC/` | Navegación | Solo `INDEX.md`, `ROADMAP.md` |
+| `00_Tareas/` | Cola de ejecución | `_PLANTILLA_TICKET.md`, `T-XX-*.md` |
+| `01_Arquitectura/` | Leyes | Diseño, superficies, ADR, changelog, decisiones, propósito |
+| `02_Specs-Frontend/` | UI / motion | `Sistema-Diseno.md`, `Reglas-Motion.md` |
+| `03_Specs-Backend/` | Datos | `Esquema-Datos.md` |
+| `04_Contenido/` | CMS y voz | `Guia-Estilo-Copy.md`, `Casos-Estudio/` |
+| `05_Calidad/` | QA | `Checklist-QA-SEO.md` |
+| `06_Especialistas/` | Specs de roles | `Design-System.md`, `Manual-Operativo-Enjambre.md`, … |
+| `99_Borradores/` | Zona libre | Ignorada por IA y por git. Propuestas jubiladas e investigación cruda. |
+
+## Notas normativas
 
 - [Roadmap](ROADMAP.md)
 - [Plantilla de ticket](../00_Tareas/_PLANTILLA_TICKET.md)
+- [Propósito de la bóveda](../01_Arquitectura/Proposito-de-la-Boveda.md)
+- [Frontmatter YAML](../01_Arquitectura/Frontmatter-YAML.md)
 - [Diseño del sistema](../01_Arquitectura/Diseno-Sistema.md)
 - [Superficies y rutas](../01_Arquitectura/Superficies-y-Rutas.md)
 - [Registro de ADR](../01_Arquitectura/Registro-ADR.md)
@@ -31,6 +37,8 @@ Entrada humana del repo: [README](../../README.md).
 - [Guía de copy](../04_Contenido/Guia-Estilo-Copy.md)
 - [Casos de estudio](../04_Contenido/Casos-Estudio/)
 - [Checklist de QA](../05_Calidad/Checklist-QA-SEO.md)
+- [Design system · rol](../06_Especialistas/Design-System.md)
+- [Manual operativo del enjambre](../06_Especialistas/Manual-Operativo-Enjambre.md)
 
 ## Código y agentes
 
@@ -41,11 +49,6 @@ Entrada humana del repo: [README](../../README.md).
 
 ## Investigación ingerida
 
-Historial de investigación. **No mandan:** la voz normativa es [Guía de estilo](../04_Contenido/Guia-Estilo-Copy.md) (T-04 / ADR-015); los tokens mandan en [Sistema de diseño](../02_Specs-Frontend/Sistema-Diseno.md) (T-03 / ADR-014).
-
-- [Investigación de portfolios](../02_Specs-Frontend/Investigacion-Portfolios.md)
-- [Narrativa de casos](../02_Specs-Frontend/Narrativa-Casos.md) — absorbida en lo aplicable por la guía
-- [Sistema de diseño · propuesta](../02_Specs-Frontend/Sistema-Diseno-propuesta.md) — absorbida por ADR-014
-- [Guía de copy · propuesta](../04_Contenido/Guia-Estilo-Copy-propuesta.md) — absorbida por ADR-015
+Absorbida en specs oficiales (ADR-014, ADR-015). Los crudos y `*-propuesta` jubilados viven solo en `99_Borradores/` (fuera del contexto de agentes). **Mandan:** [Guía de estilo](../04_Contenido/Guia-Estilo-Copy.md) y [Sistema de diseño](../02_Specs-Frontend/Sistema-Diseno.md).
 
 `estado: bloqueado` se obedece. El ticket dice qué archivos se tocan y qué notas se leen. `/ingerir` es la única vía que puede leer archivos concretos de `99_Borradores/` para destilarlos.
