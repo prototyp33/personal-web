@@ -2,7 +2,7 @@
 id: T-02
 titulo: "Parser local de casos Markdown/MDX"
 rol_asignado: backend
-estado: pendiente
+estado: completado
 aislamiento: serie
 dependencias: []
 primer_archivo: "src/lib/content/get-case-studies.ts"
@@ -49,17 +49,17 @@ Fuera de alcance:
 
 ## Criterio de aceptación
 
-- [ ] La función vive solo en `src/lib/content/` y devuelve `ProjectCaseStudy[]`.
-- [ ] El lector es el `gray-matter` ya instalado. No se añade otro parser ni otra dependencia.
-- [ ] El `slug` es el nombre del archivo, sin extensión. El frente YAML y los encabezados `## Problema`, `## Arquitectura` y `## Métricas de Impacto` se mapean como dice `Esquema-Datos.md` a `problem`, `approach` y `outcome`.
-- [ ] Carpeta vacía o inexistente: devuelve `[]`.
-- [ ] Falta `titulo`, `resumen`, `rol`, `anio`, `orden` o una de las tres secciones: la función lanza un error con el `slug`.
-- [ ] `destacado` ausente vale `false`. `etiquetas` ausente vale `[]`. Claves desconocidas se ignoran.
-- [ ] El listado sale por `order` ascendente y, a igualdad, por `slug`.
-- [ ] Un `.mdx` con import o JSX lanza error. No hay componentes permitidos.
-- [ ] `src/app/page.tsx` no existe o, si T-01 ya lo creó, sigue importando el mock.
-- [ ] `npm run scope -- brain/00_Tareas/T-02-Parser-Obsidian-MDX.md` termina en cero.
-- [ ] `npm run verify` termina en cero.
+- [x] La función vive solo en `src/lib/content/` y devuelve `ProjectCaseStudy[]`.
+- [x] El lector es el `gray-matter` ya instalado. No se añade otro parser ni otra dependencia.
+- [x] El `slug` es el nombre del archivo, sin extensión. El frente YAML y los encabezados `## Problema`, `## Arquitectura` y `## Métricas de Impacto` se mapean como dice `Esquema-Datos.md` a `problem`, `approach` y `outcome`.
+- [x] Carpeta vacía o inexistente: devuelve `[]`.
+- [x] Falta `titulo`, `resumen`, `rol`, `anio`, `orden` o una de las tres secciones: la función lanza un error con el `slug`.
+- [x] `destacado` ausente vale `false`. `etiquetas` ausente vale `[]`. Claves desconocidas se ignoran.
+- [x] El listado sale por `order` ascendente y, a igualdad, por `slug`.
+- [x] Un `.mdx` con import o JSX lanza error. No hay componentes permitidos.
+- [x] `src/app/page.tsx` no existe o, si T-01 ya lo creó, sigue importando el mock.
+- [x] `npm run scope -- brain/00_Tareas/T-02-Parser-Obsidian-MDX.md` termina en cero.
+- [x] `npm run verify` termina en cero.
 
 ## Archivos permitidos
 
