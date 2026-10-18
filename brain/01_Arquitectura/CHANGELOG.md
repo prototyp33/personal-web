@@ -6,3 +6,4 @@ Bitácora de tickets cerrados. No es un ADR. La escribe el orquestador en `/dest
 - **T-03.** `Sistema-Diseno.md` pasa a P1 papel (ADR-014); la propuesta queda como historial y ya no manda.
 - **T-04.** Guía de copy con narrativa en tres bloques (ADR-015); la propuesta queda como historial.
 - **T-05.** Portada y tokens P1 en CSS; Inter Display sustituido por Inter vía `next/font` (Newsreader + JetBrains Mono sí).
+- **T-02.** Parser `getCaseStudies` aceptado con scope tras baseline git; la portada sigue en el mock.
