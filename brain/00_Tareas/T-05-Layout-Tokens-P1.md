@@ -2,7 +2,7 @@
 id: T-05
 titulo: "Layout con tokens P1"
 rol_asignado: ui-layout
-estado: pendiente
+estado: completado
 aislamiento: serie
 dependencias:
   - T-03
@@ -49,11 +49,11 @@ Fuera de alcance:
 
 ## Criterio de aceptación
 
-- [ ] `globals.css` (o el mecanismo actual de tokens) refleja canvas, ink, muted, line, accent y danger de `Sistema-Diseno.md`.
-- [ ] Titulares y cuerpo usan las familias normativas del sistema (o el sustituto documentado en Notas de cierre si `next/font` no ofrece Inter Display / Newsreader).
-- [ ] La portada sigue listando `featured` del mock, uno por fila, sobre fondo papel; contraste de texto ≥ 4.5:1 sobre el canvas.
-- [ ] No reintroduce bento ni la paleta cobre/oscuro anterior.
-- [ ] `npm run verify` termina en cero.
+- [x] `globals.css` (o el mecanismo actual de tokens) refleja canvas, ink, muted, line, accent y danger de `Sistema-Diseno.md`.
+- [x] Titulares y cuerpo usan las familias normativas del sistema (o el sustituto documentado en Notas de cierre si `next/font` no ofrece Inter Display / Newsreader).
+- [x] La portada sigue listando `featured` del mock, uno por fila, sobre fondo papel; contraste de texto ≥ 4.5:1 sobre el canvas.
+- [x] No reintroduce bento ni la paleta cobre/oscuro anterior.
+- [x] `npm run verify` termina en cero.
 
 ## Archivos permitidos
 
@@ -88,7 +88,7 @@ Fuera de alcance:
 
 Una sola casilla. La rellena el ejecutor.
 
-- [ ] Aprobado
+- [x] Aprobado
 - [ ] Devuelto al Orquestador
 
 Motivo de la devolución:
@@ -99,7 +99,7 @@ Motivo de la devolución:
 
 Una o dos líneas de lo que quedó hecho. No es una ADR. `/destilar` la copia al changelog.
 
--
+- Portada y tokens P1 en CSS; Inter Display sustituido por Inter vía `next/font` (Newsreader + JetBrains Mono sí).
 
 ## ADR generado
 

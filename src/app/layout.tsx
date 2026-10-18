@@ -1,24 +1,24 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Figtree, Fraunces, IBM_Plex_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Newsreader } from "next/font/google";
 import { SiteFooter } from "../components/layout/SiteFooter";
 import { SiteHeader } from "../components/layout/SiteHeader";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-inter",
 });
 
-const figtree = Figtree({
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-figtree",
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-ibm-plex-mono",
+  variable: "--font-jetbrains-mono",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="es"
-      className={`${fraunces.variable} ${figtree.variable} ${ibmPlexMono.variable}`}
+      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
     >
       <body className="bg-canvas font-body text-body text-ink">
         <div className="mx-auto w-full max-w-page px-gutter">

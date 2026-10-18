@@ -8,18 +8,18 @@ const featuredCaseStudies: readonly ProjectCaseStudy[] = projectCaseStudies
 export default function HomePage() {
   return (
     <>
-      <p className="mt-gutter max-w-measure text-lead">
+      <p className="mt-gutter max-w-measure text-lead text-muted">
         Ingeniería de datos e IA para decisiones de producto y de operación.
       </p>
       <ul className="mt-gutter flex flex-col gap-gutter">
         {featuredCaseStudies.map((study) => (
           <li key={study.slug}>
-            <article className="rounded-2xl border border-white/10 bg-surface p-gutter shadow-card">
-              <h2 className="font-display text-section">{study.title}</h2>
+            <article className="rounded-card border border-line bg-surface p-gutter">
+              <h2 className="font-display text-section text-ink">{study.title}</h2>
               <p className="font-mono text-meta text-muted">
                 <time dateTime={String(study.year)}>{study.year}</time>
               </p>
-              <p className="mt-gutter max-w-measure">{study.summary}</p>
+              <p className="mt-gutter max-w-measure text-ink">{study.summary}</p>
             </article>
           </li>
         ))}

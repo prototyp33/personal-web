@@ -2,38 +2,40 @@
 @source "..";
 
 @theme {
-  --color-canvas: #12110f;
-  --color-surface: #1c1b18;
-  --color-ink: #f3efe6;
-  --color-muted: #c8c1b6;
-  --color-accent: #e08a45;
-  --color-line: rgb(255 255 255 / 0.1);
+  --color-canvas: #f4f1ea;
+  --color-surface: #edeae3;
+  --color-ink: #161513;
+  --color-muted: #6b6760;
+  --color-accent: #2f5bff;
+  --color-danger: #c2412d;
+  --color-line: #e2ddd2;
 
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
-  --font-body: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo,
+    monospace;
 
-  --radius-card: 1rem;
-  --shadow-card: 0 24px 48px -28px rgb(0 0 0 / 0.65);
+  --radius-card: 0.5rem;
 
   --spacing-gutter: clamp(1.25rem, 4vw, 3rem);
   --container-page: 72rem;
-  --container-measure: 68ch;
+  --container-measure: 680px;
 
-  --text-display: clamp(2.5rem, 5vw, 4.5rem);
-  --text-display--line-height: 1.05;
+  --text-display: clamp(2rem, 4vw, 2.75rem);
+  --text-display--line-height: 1.1;
   --text-display--letter-spacing: -0.02em;
   --text-display--font-weight: 560;
 
-  --text-section: clamp(1.75rem, 3vw, 2.25rem);
-  --text-section--line-height: 1.15;
+  --text-section: clamp(1.35rem, 2.5vw, 1.75rem);
+  --text-section--line-height: 1.2;
   --text-section--font-weight: 520;
 
   --text-body: 1.125rem;
   --text-body--line-height: 1.6;
 
-  --text-lead: 1.25rem;
-  --text-lead--line-height: 1.5;
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.6;
 
   --text-meta: 0.75rem;
   --text-meta--line-height: 1.4;
@@ -42,14 +44,14 @@
 
 :root {
   --page-max: 72rem;
-  --measure: 68ch;
+  --measure: 680px;
 }
 
 @layer base {
   html {
     background: var(--color-canvas);
     color: var(--color-ink);
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   :focus-visible {
