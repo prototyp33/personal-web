@@ -2,7 +2,7 @@
 id: T-03
 titulo: "Sistema de diseño P1 papel"
 rol_asignado: design-system
-estado: pendiente
+estado: completado
 aislamiento: serie
 dependencias: []
 contexto_lectura:
@@ -45,13 +45,13 @@ Fuera de alcance:
 
 ## Criterio de aceptación
 
-- [ ] `Sistema-Diseno.md` documenta tokens P1: canvas `#F4F1EA`, ink `#161513`, muted `#6B6760`, line `#E2DDD2`, accent `#2F5BFF`, danger `#C2412D`.
-- [ ] Tipografía normativa: Inter Display (titulares), Inter (cuerpo), Newsreader Italic (citas/acentos), JetBrains Mono (meta y cifras). Escala de 2–3 tallas.
-- [ ] Layout: columna de lectura (~680 px / `--measure`), portada tipo laboratorio (nombre, frase, casos featured), caso con titular-resultado y meta en mono. Sin bento.
-- [ ] El spring por defecto sigue siendo `{ type: "spring", stiffness: 300, damping: 30 }` con `prefers-reduced-motion`.
-- [ ] Frontmatter: `rol: design-system`, `estado: bloqueado`, resumen actualizado.
-- [ ] `Sistema-Diseno-propuesta.md` indica que ADR-014 la absorbió y ya no manda.
-- [ ] `npm run verify` termina en cero.
+- [x] `Sistema-Diseno.md` documenta tokens P1: canvas `#F4F1EA`, ink `#161513`, muted `#6B6760`, line `#E2DDD2`, accent `#2F5BFF`, danger `#C2412D`.
+- [x] Tipografía normativa: Inter Display (titulares), Inter (cuerpo), Newsreader Italic (citas/acentos), JetBrains Mono (meta y cifras). Escala de 2–3 tallas.
+- [x] Layout: columna de lectura (~680 px / `--measure`), portada tipo laboratorio (nombre, frase, casos featured), caso con titular-resultado y meta en mono. Sin bento.
+- [x] El spring por defecto sigue siendo `{ type: "spring", stiffness: 300, damping: 30 }` con `prefers-reduced-motion`.
+- [x] Frontmatter: `rol: design-system`, `estado: bloqueado`, resumen actualizado.
+- [x] `Sistema-Diseno-propuesta.md` indica que ADR-014 la absorbió y ya no manda.
+- [x] `npm run verify` termina en cero.
 
 ## Archivos permitidos
 
@@ -83,7 +83,7 @@ Fuera de alcance:
 
 Una sola casilla. La rellena el ejecutor.
 
-- [ ] Aprobado
+- [x] Aprobado
 - [ ] Devuelto al Orquestador
 
 Motivo de la devolución:
@@ -94,7 +94,7 @@ Motivo de la devolución:
 
 Una o dos líneas de lo que quedó hecho. No es una ADR. `/destilar` la copia al changelog.
 
--
+- `Sistema-Diseno.md` pasa a P1 papel (ADR-014); la propuesta queda como historial y ya no manda.
 
 ## ADR generado
 

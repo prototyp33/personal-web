@@ -3,3 +3,4 @@
 Bitácora de tickets cerrados. No es un ADR. La escribe el orquestador en `/destilar`, una viñeta por ticket, a partir de `## Notas de cierre`. Los agentes no la leen al arrancar.
 
 - **E0.** El relevo único se sustituye por tickets. No hay aprendizaje de implementación: aún no hay código de producto.
+- **T-03.** `Sistema-Diseno.md` pasa a P1 papel (ADR-014); la propuesta queda como historial y ya no manda.
