@@ -35,6 +35,7 @@ Ningún archivo durable fuera de estas carpetas. Inventario normativo en [Propó
 - [Reglas de motion](../02_Specs-Frontend/Reglas-Motion.md)
 - [Esquema de datos](../03_Specs-Backend/Esquema-Datos.md)
 - [Guía de copy](../04_Contenido/Guia-Estilo-Copy.md)
+- [Sobre mí](../04_Contenido/Sobre-mi.md)
 - [Casos de estudio](../04_Contenido/Casos-Estudio/)
 - [Checklist de QA](../05_Calidad/Checklist-QA-SEO.md)
 - [Design system · rol](../06_Especialistas/Design-System.md)
