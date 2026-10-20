@@ -2,60 +2,534 @@
 @source "..";
 
 @theme {
-  --color-canvas: #f4f1ea;
-  --color-surface: #edeae3;
-  --color-ink: #161513;
-  --color-muted: #6b6760;
-  --color-accent: #2f5bff;
-  --color-danger: #c2412d;
-  --color-line: #e2ddd2;
+  --color-canvas: #f6f0ec;
+  --color-card: #f8e0db;
+  --color-card-deep: #f0cdc6;
+  --color-ink: #161311;
+  --color-muted: #5c3330;
+  --color-accent: #163a82;
+  --color-accent-ink: #f7f2ee;
+  --color-line: #e4c4bc;
+  --color-bloom: #b85a54;
 
-  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo,
-    monospace;
+  --font-display: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
 
-  --radius-card: 0.5rem;
+  --radius-card: 1.75rem;
 
-  --spacing-gutter: clamp(1.25rem, 4vw, 3rem);
-  --container-page: 72rem;
-  --container-measure: 680px;
+  --text-display: clamp(2.15rem, 3.8vw, 3.15rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.034em;
+  --text-display--font-weight: 700;
 
-  --text-display: clamp(2rem, 4vw, 2.75rem);
-  --text-display--line-height: 1.1;
-  --text-display--letter-spacing: -0.02em;
-  --text-display--font-weight: 560;
+  --text-contact: clamp(1.9rem, 2.8vw, 2.4rem);
+  --text-contact--line-height: 0.95;
+  --text-contact--letter-spacing: -0.035em;
+  --text-contact--font-weight: 700;
 
-  --text-section: clamp(1.35rem, 2.5vw, 1.75rem);
-  --text-section--line-height: 1.2;
-  --text-section--font-weight: 520;
-
-  --text-body: 1.125rem;
-  --text-body--line-height: 1.6;
-
-  --text-lead: 1.125rem;
-  --text-lead--line-height: 1.6;
-
-  --text-meta: 0.75rem;
-  --text-meta--line-height: 1.4;
-  --text-meta--letter-spacing: 0.04em;
+  --text-body: 1.02rem;
+  --text-body--line-height: 1.55;
 }
 
 :root {
-  --page-max: 72rem;
-  --measure: 680px;
+  color-scheme: light;
 }
 
 @layer base {
   html {
     background: var(--color-canvas);
     color: var(--color-ink);
-    color-scheme: light;
+    scroll-padding-top: 1rem;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-canvas);
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
   }
 
   :focus-visible {
     outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+html {
+  scrollbar-color: var(--color-accent) var(--color-canvas);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-120%);
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  padding: 0.55rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: translateY(0.75rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.shell {
+  width: min(70rem, calc(100% - 2rem));
+  margin: 1.15rem auto 2rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-bottom: 0.9rem;
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  padding: 1.05rem 1.4rem;
+}
+
+.brand {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--color-ink);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: var(--color-accent);
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: minmax(0, 1.32fr) minmax(0, 0.9fr) minmax(0, 1.05fr);
+  grid-template-areas:
+    "hero portrait projects"
+    "bio contact projects";
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.hero,
+.bio,
+.contact,
+.projects,
+.socials,
+.portrait {
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+}
+
+.hero {
+  grid-area: hero;
+  position: relative;
+  display: flex;
+  min-height: 17.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 1.5rem 1.6rem 1.7rem;
+}
+
+.bloom {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  color: var(--color-bloom);
+}
+
+.bloom-small {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.45rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  color: var(--color-bloom);
+}
+
+.statement {
+  margin: 0;
+  max-width: 16ch;
+  font-size: var(--text-display);
+  font-weight: var(--text-display--font-weight);
+  letter-spacing: var(--text-display--letter-spacing);
+  line-height: var(--text-display--line-height);
+}
+
+.statement-italic {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.statement-bold {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.portrait {
+  grid-area: portrait;
+  position: relative;
+  min-height: 17.5rem;
+  overflow: hidden;
+}
+
+.portrait-art,
+.portrait-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait-photo {
+  position: absolute;
+  inset: 0;
+}
+
+.projects {
+  grid-area: projects;
+  align-self: start;
+  display: flex;
+  min-height: calc(100% - 3.55rem - 0.9rem - 6px);
+  flex-direction: column;
+  padding: 1.15rem 1.2rem 0.45rem;
+}
+
+.socials {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: end;
+  z-index: 1;
+}
+
+.project-list {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.project-link:hover .project-title {
+  color: var(--color-accent);
+}
+
+.project-featured {
+  padding-bottom: 0.35rem;
+}
+
+.project-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.project-arrow {
+  flex: none;
+  margin-top: 0.15rem;
+  color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project-link:hover .project-arrow,
+  .contact:hover .project-arrow {
+    transform: translate(3px, -3px);
+  }
+
+  .project-arrow {
+    transition: transform 180ms ease-out;
+  }
+}
+
+.project-copy {
+  margin: 0.45rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.project-preview {
+  position: relative;
+  margin-top: 0.9rem;
+  overflow: hidden;
+  border-radius: 1.15rem;
+  aspect-ratio: 16 / 10;
+  background: var(--color-card-deep);
+}
+
+.project-preview svg,
+.project-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-row {
+  border-top: 1px solid var(--color-line);
+}
+
+.project-row .project-link {
+  padding: 0.95rem 0.15rem;
+}
+
+.project-row .project-title {
+  font-size: 1.2rem;
+}
+
+.project-row .project-copy {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.bio {
+  grid-area: bio;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3.4rem 1.45rem 1.5rem;
+}
+
+.bio p {
+  margin: 0;
+  max-width: 38ch;
+  color: var(--color-ink);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.bio-place {
+  margin-top: 0.85rem;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.contact {
+  grid-area: contact;
+  position: relative;
+  display: flex;
+  min-height: 11.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  padding: 1.2rem 1.25rem 1.3rem;
+  text-decoration: none;
+}
+
+.contact:hover {
+  background: #12336f;
+}
+
+.contact:focus-visible {
+  outline-color: var(--color-accent-ink);
+}
+
+.contact-label {
+  margin: 0;
+  max-width: 12ch;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.contact-title {
+  margin: 1.25rem 0 0;
+  font-size: var(--text-contact);
+  font-weight: var(--text-contact--font-weight);
+  letter-spacing: var(--text-contact--letter-spacing);
+  line-height: var(--text-contact--line-height);
+}
+
+.contact .project-arrow {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.15rem;
+  color: var(--color-accent-ink);
+}
+
+.socials {
+  padding: 0.95rem 1.15rem;
+}
+
+.socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.55rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials a,
+.social-pending {
+  color: var(--color-ink);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.socials a:hover {
+  color: var(--color-accent);
+}
+
+.social-note {
+  margin-left: 0.35rem;
+  color: var(--color-muted);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  .shell {
+    width: min(70rem, calc(100% - 1.5rem));
+    margin-top: 0.75rem;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 0.75rem;
+    padding: 1rem 1.05rem;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav ul {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .bento {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "portrait"
+      "projects"
+      "bio"
+      "contact"
+      "socials";
+    gap: 0.75rem;
+  }
+
+  .projects {
+    min-height: 0;
+    height: auto;
+  }
+
+  .socials {
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: socials;
+  }
+
+  .hero,
+  .portrait {
+    min-height: 0;
+  }
+
+  .hero {
+    min-height: 16rem;
+  }
+
+  .portrait {
+    aspect-ratio: 4 / 5;
+  }
+
+  .statement {
+    max-width: 16ch;
+    font-size: clamp(2rem, 9vw, 2.55rem);
+  }
+
+  .bloom {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .contact {
+    min-height: 11rem;
   }
 }
