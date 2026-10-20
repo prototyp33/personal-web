@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T16:33:13Z",
+  "title": "Design System: Adrian Javier Iraegui",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f6f0ec",
+        "tonalRamp": ["oklch(15.0% 0.008 56.3)", "oklch(26.4% 0.008 56.3)", "oklch(37.9% 0.008 56.3)", "oklch(49.3% 0.008 56.3)", "oklch(60.7% 0.008 56.3)", "oklch(72.1% 0.008 56.3)", "oklch(83.6% 0.008 56.3)", "oklch(95.0% 0.008 56.3)"]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Blush",
+        "canonical": "#f8e0db",
+        "tonalRamp": ["oklch(15.0% 0.027 31.7)", "oklch(26.4% 0.027 31.7)", "oklch(37.9% 0.027 31.7)", "oklch(49.3% 0.027 31.7)", "oklch(60.7% 0.027 31.7)", "oklch(72.1% 0.027 31.7)", "oklch(83.6% 0.027 31.7)", "oklch(95.0% 0.027 31.7)"]
+      },
+      "card-deep": {
+        "role": "neutral",
+        "displayName": "Blush Well",
+        "canonical": "#f0cdc6",
+        "tonalRamp": ["oklch(15.0% 0.041 31.2)", "oklch(26.4% 0.041 31.2)", "oklch(37.9% 0.041 31.2)", "oklch(49.3% 0.041 31.2)", "oklch(60.7% 0.041 31.2)", "oklch(72.1% 0.041 31.2)", "oklch(83.6% 0.041 31.2)", "oklch(95.0% 0.041 31.2)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#161311",
+        "tonalRamp": ["oklch(15.0% 0.006 56.0)", "oklch(26.4% 0.006 56.0)", "oklch(37.9% 0.006 56.0)", "oklch(49.3% 0.006 56.0)", "oklch(60.7% 0.006 56.0)", "oklch(72.1% 0.006 56.0)", "oklch(83.6% 0.006 56.0)", "oklch(95.0% 0.006 56.0)"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Rose",
+        "canonical": "#5c3330",
+        "tonalRamp": ["oklch(15.0% 0.060 24.8)", "oklch(26.4% 0.060 24.8)", "oklch(37.9% 0.060 24.8)", "oklch(49.3% 0.060 24.8)", "oklch(60.7% 0.060 24.8)", "oklch(72.1% 0.060 24.8)", "oklch(83.6% 0.060 24.8)", "oklch(95.0% 0.060 24.8)"]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Deep Cobalt",
+        "canonical": "#163a82",
+        "tonalRamp": ["oklch(15.0% 0.129 262.2)", "oklch(26.4% 0.129 262.2)", "oklch(37.9% 0.129 262.2)", "oklch(49.3% 0.129 262.2)", "oklch(60.7% 0.129 262.2)", "oklch(72.1% 0.129 262.2)", "oklch(83.6% 0.129 262.2)", "oklch(95.0% 0.129 262.2)"]
+      },
+      "accent-ink": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "#f7f2ee",
+        "tonalRamp": ["oklch(15.0% 0.008 61.5)", "oklch(26.4% 0.008 61.5)", "oklch(37.9% 0.008 61.5)", "oklch(49.3% 0.008 61.5)", "oklch(60.7% 0.008 61.5)", "oklch(72.1% 0.008 61.5)", "oklch(83.6% 0.008 61.5)", "oklch(95.0% 0.008 61.5)"]
+      },
+      "accent-press": {
+        "role": "primary",
+        "displayName": "Pressed Cobalt",
+        "canonical": "#12336f",
+        "tonalRamp": ["oklch(15.0% 0.111 261.2)", "oklch(26.4% 0.111 261.2)", "oklch(37.9% 0.111 261.2)", "oklch(49.3% 0.111 261.2)", "oklch(60.7% 0.111 261.2)", "oklch(72.1% 0.111 261.2)", "oklch(83.6% 0.111 261.2)", "oklch(95.0% 0.111 261.2)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Blush Hairline",
+        "canonical": "#e4c4bc",
+        "tonalRamp": ["oklch(15.0% 0.038 34.3)", "oklch(26.4% 0.038 34.3)", "oklch(37.9% 0.038 34.3)", "oklch(49.3% 0.038 34.3)", "oklch(60.7% 0.038 34.3)", "oklch(72.1% 0.038 34.3)", "oklch(83.6% 0.038 34.3)", "oklch(95.0% 0.038 34.3)"]
+      },
+      "bloom": {
+        "role": "secondary",
+        "displayName": "Bloom",
+        "canonical": "#b85a54",
+        "tonalRamp": ["oklch(15.0% 0.123 25.3)", "oklch(26.4% 0.123 25.3)", "oklch(37.9% 0.123 25.3)", "oklch(49.3% 0.123 25.3)", "oklch(60.7% 0.123 25.3)", "oklch(72.1% 0.123 25.3)", "oklch(83.6% 0.123 25.3)", "oklch(95.0% 0.123 25.3)"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Statement, capped at 16ch. Roman lines stay weight 700; italic lines are weight 500. From 860px the size is clamp(2rem, 9vw, 2.55rem)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Contact title. The line above it is 0.95rem, weight 500, line-height 1.3, capped at 12ch."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Featured project name. Later rows use 1.2rem at the same weight and tracking."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Root size. Bio copy is 0.98rem within 38ch. Project descriptions are 0.92rem at line-height 1.45."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase nav. The bar name is 0.78rem. Social labels are 0.72rem at 0.13em."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "arrow-nudge",
+        "value": "transform 180ms ease-out",
+        "purpose": "Observed on the shipped corner mark: translate(3px, -3px) on project and contact hover, only inside prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "scroll",
+        "value": "smooth",
+        "purpose": "Document scroll-behavior is smooth only inside prefers-reduced-motion: no-preference."
+      }
+    ],
+    "breakpoints": [
+      { "name": "stack-max", "value": "860px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Top bar",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Blush bar with the name and three in-page links.",
+      "html": "<header class=\"ds-topbar\"><p class=\"ds-brand\">Adrian Javier Iraegui</p><nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#projects\">Projects</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav></header>",
+      "css": ".ds-topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem 1.5rem; border-radius: var(--radius-card, 1.75rem); background: var(--color-card, #f8e0db); color: var(--color-ink, #161311); padding: 1.05rem 1.4rem; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-brand { margin: 0; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; } .ds-nav { display: flex; flex-wrap: wrap; gap: 0.35rem 1.35rem; } .ds-nav a { color: var(--color-ink, #161311); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-decoration: none; text-transform: uppercase; } .ds-nav a:hover { color: var(--color-accent, #163a82); } .ds-nav a:focus-visible { outline: 2px solid var(--color-accent, #163a82); outline-offset: 3px; }"
+    },
+    {
+      "name": "Statement",
+      "kind": "card",
+      "refersTo": "statement",
+      "description": "Headline tile with a line bloom and italic middle line.",
+      "html": "<article class=\"ds-statement\"><svg class=\"ds-bloom\" viewBox=\"0 0 80 80\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\"><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(45 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(90 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(135 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(180 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(225 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(270 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(315 40 40)\"/><circle cx=\"40\" cy=\"40\" r=\"5\"/></g></svg><h2 class=\"ds-statement-text\"><span class=\"ds-statement-bold\">Data &amp; Business Analyst</span><span class=\"ds-statement-italic\">bridging data and</span><span class=\"ds-statement-bold\">business strategy</span></h2></article>",
+      "css": ".ds-statement { position: relative; display: flex; min-height: 17.5rem; flex-direction: column; justify-content: flex-end; overflow: hidden; border-radius: var(--radius-card, 1.75rem); background: var(--color-card, #f8e0db); color: var(--color-ink, #161311); padding: 1.5rem 1.6rem 1.7rem; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-bloom { position: absolute; top: 1.25rem; right: 1.25rem; width: 5.4rem; height: 5.4rem; color: var(--color-bloom, #b85a54); } .ds-statement-text { margin: 0; max-width: 16ch; font-size: var(--text-display, clamp(2.15rem, 3.8vw, 3.15rem)); font-weight: 700; letter-spacing: -0.034em; line-height: 1.02; } .ds-statement-bold, .ds-statement-italic { display: block; } .ds-statement-italic { font-style: italic; font-weight: 500; } .ds-statement-bold { font-style: normal; font-weight: 700; }"
+    },
+    {
+      "name": "Portrait plate",
+      "kind": "custom",
+      "refersTo": "portrait",
+      "description": "Abstract portrait stand-in until a photograph is set.",
+      "html": "<figure class=\"ds-portrait\"><svg viewBox=\"0 0 320 420\" role=\"img\" aria-label=\"Abstract stand-in for a portrait of Adrian Javier Iraegui\"><rect width=\"320\" height=\"420\" fill=\"#f3d4cd\"/><circle cx=\"232\" cy=\"108\" r=\"74\" fill=\"#163a82\"/><circle cx=\"232\" cy=\"108\" r=\"48\" fill=\"none\" stroke=\"#f7f2ee\" stroke-width=\"1.5\"/><rect x=\"28\" y=\"168\" width=\"118\" height=\"168\" rx=\"28\" fill=\"#f8e0db\"/><path d=\"M46 292c22-28 40-28 62 0\" fill=\"none\" stroke=\"#163a82\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52 250h70\" fill=\"none\" stroke=\"#b85a54\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"168\" y=\"236\" width=\"22\" height=\"112\" rx=\"11\" fill=\"#161311\"/><rect x=\"198\" y=\"198\" width=\"22\" height=\"150\" rx=\"11\" fill=\"#163a82\"/><rect x=\"228\" y=\"258\" width=\"22\" height=\"90\" rx=\"11\" fill=\"#b85a54\"/><rect x=\"258\" y=\"220\" width=\"22\" height=\"128\" rx=\"11\" fill=\"#161311\"/></svg></figure>",
+      "css": ".ds-portrait { margin: 0; overflow: hidden; border-radius: var(--radius-card, 1.75rem); background: var(--color-card, #f8e0db); aspect-ratio: 320 / 420; } .ds-portrait svg { display: block; width: 100%; height: 100%; }"
+    },
+    {
+      "name": "Contact",
+      "kind": "card",
+      "refersTo": "contact",
+      "description": "The cobalt contact tile, the only primary action.",
+      "html": "<a class=\"ds-contact\" href=\"#contact\"><p class=\"ds-contact-label\">Based in Barcelona</p><p class=\"ds-contact-title\">Contact me</p><svg class=\"ds-mark\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M7 7h10v10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7 17 17 7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-contact { position: relative; display: flex; min-height: 11.5rem; flex-direction: column; justify-content: space-between; border-radius: var(--radius-card, 1.75rem); background: var(--color-accent, #163a82); color: var(--color-accent-ink, #f7f2ee); padding: 1.2rem 1.25rem 1.3rem; text-decoration: none; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-contact:hover { background: #12336f; } .ds-contact:focus-visible { outline: 2px solid var(--color-accent-ink, #f7f2ee); outline-offset: 3px; } .ds-contact-label { margin: 0; max-width: 12ch; font-size: 0.95rem; font-weight: 500; line-height: 1.3; } .ds-contact-title { margin: 1.25rem 0 0; font-size: var(--text-contact, clamp(1.9rem, 2.8vw, 2.4rem)); font-weight: 700; letter-spacing: -0.035em; line-height: 0.95; } .ds-mark { position: absolute; top: 1.15rem; right: 1.15rem; } @media (prefers-reduced-motion: no-preference) { .ds-mark { transition: transform 180ms ease-out; } .ds-contact:hover .ds-mark { transform: translate(3px, -3px); } }"
+    },
+    {
+      "name": "Featured project",
+      "kind": "card",
+      "refersTo": "project-link",
+      "description": "First project, with title, description, and a 16/10 preview well.",
+      "html": "<a class=\"ds-feature\" href=\"#projects\"><span class=\"ds-feature-title\">Barcelona Housing</span><p class=\"ds-feature-copy\">Open-source dashboard to analyze the relationship between demographic evolution and housing prices in Barcelona.</p><span class=\"ds-preview\"><svg viewBox=\"0 0 640 400\" aria-hidden=\"true\"><rect width=\"640\" height=\"400\" fill=\"#f0cdc6\"/><rect x=\"0\" y=\"262\" width=\"640\" height=\"138\" fill=\"#e7bfb6\"/><rect x=\"48\" y=\"168\" width=\"54\" height=\"150\" rx=\"12\" fill=\"#f8e0db\"/><rect x=\"116\" y=\"124\" width=\"54\" height=\"194\" rx=\"12\" fill=\"#163a82\"/><rect x=\"184\" y=\"186\" width=\"54\" height=\"132\" rx=\"12\" fill=\"#161311\"/><rect x=\"252\" y=\"96\" width=\"54\" height=\"222\" rx=\"12\" fill=\"#f8e0db\"/><rect x=\"320\" y=\"150\" width=\"54\" height=\"168\" rx=\"12\" fill=\"#b85a54\"/><rect x=\"388\" y=\"118\" width=\"54\" height=\"200\" rx=\"12\" fill=\"#163a82\"/><rect x=\"456\" y=\"176\" width=\"54\" height=\"142\" rx=\"12\" fill=\"#161311\"/><rect x=\"524\" y=\"140\" width=\"54\" height=\"178\" rx=\"12\" fill=\"#f8e0db\"/><path d=\"M40 248c70-46 120-18 180-52 62-36 110 8 170-28 48-28 90-8 150-46\" fill=\"none\" stroke=\"#f7f2ee\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></span></a>",
+      "css": ".ds-feature { display: block; border-radius: 1rem; color: var(--color-ink, #161311); padding: 0 0 0.35rem; text-decoration: none; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-feature:focus-visible { outline: 2px solid var(--color-accent, #163a82); outline-offset: 3px; } .ds-feature-title { display: block; font-size: 1.35rem; font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; } .ds-feature:hover .ds-feature-title { color: var(--color-accent, #163a82); } .ds-feature-copy { margin: 0.45rem 0 0; color: var(--color-muted, #5c3330); font-size: 0.92rem; line-height: 1.45; } .ds-preview { display: block; margin-top: 0.9rem; overflow: hidden; border-radius: 1.15rem; aspect-ratio: 16 / 10; background: var(--color-card-deep, #f0cdc6); } .ds-preview svg { display: block; width: 100%; height: 100%; }"
+    },
+    {
+      "name": "Project row",
+      "kind": "custom",
+      "refersTo": "project-row",
+      "description": "Later project, hairline above, description clamped to two lines.",
+      "html": "<a class=\"ds-row\" href=\"#projects\"><span class=\"ds-row-title\">OnSpotML</span><p class=\"ds-row-copy\">Machine Learning project for parking prediction in Barcelona.</p></a>",
+      "css": ".ds-row { display: block; border-top: 1px solid var(--color-line, #e4c4bc); border-radius: 1rem; color: var(--color-ink, #161311); padding: 0.95rem 0.15rem; text-decoration: none; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-row:focus-visible { outline: 2px solid var(--color-accent, #163a82); outline-offset: 3px; } .ds-row-title { display: block; font-size: 1.2rem; font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; } .ds-row:hover .ds-row-title { color: var(--color-accent, #163a82); } .ds-row-copy { display: -webkit-box; margin: 0.45rem 0 0; overflow: hidden; color: var(--color-muted, #5c3330); font-size: 0.92rem; line-height: 1.45; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }"
+    },
+    {
+      "name": "Bio",
+      "kind": "card",
+      "refersTo": "bio",
+      "description": "Blush bio tile with a small bloom and the place line.",
+      "html": "<section class=\"ds-bio\"><svg class=\"ds-bloom-small\" viewBox=\"0 0 80 80\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\"><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(45 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(90 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(135 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(180 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(225 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(270 40 40)\"/><ellipse cx=\"40\" cy=\"18\" rx=\"5.2\" ry=\"13\" transform=\"rotate(315 40 40)\"/><circle cx=\"40\" cy=\"40\" r=\"5\"/></g></svg><p>Data &amp; Business Analyst. Grad in Management &amp; Tech, skilled in Python, and AI-driven process optimization.</p><p class=\"ds-place\">Based in Barcelona.</p></section>",
+      "css": ".ds-bio { position: relative; display: flex; flex-direction: column; justify-content: flex-end; border-radius: var(--radius-card, 1.75rem); background: var(--color-card, #f8e0db); color: var(--color-ink, #161311); padding: 3.4rem 1.45rem 1.5rem; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-bloom-small { position: absolute; top: 1.2rem; left: 1.45rem; width: 1.35rem; height: 1.35rem; color: var(--color-bloom, #b85a54); } .ds-bio p { margin: 0; max-width: 38ch; font-size: 0.98rem; line-height: 1.55; } .ds-place { margin-top: 0.85rem; color: var(--color-muted, #5c3330); font-size: 0.92rem; font-weight: 600; letter-spacing: 0.01em; }"
+    },
+    {
+      "name": "Social strip",
+      "kind": "nav",
+      "refersTo": "socials",
+      "description": "Uppercase social labels. Missing URLs stay text with a Pending note.",
+      "html": "<footer class=\"ds-socials\"><a href=\"#github\">GitHub</a><span class=\"ds-pending\">LinkedIn <span class=\"ds-note\">Pending</span></span><span class=\"ds-pending\">Email <span class=\"ds-note\">Pending</span></span></footer>",
+      "css": ".ds-socials { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.55rem 1rem; border-radius: var(--radius-card, 1.75rem); background: var(--color-card, #f8e0db); color: var(--color-ink, #161311); padding: 0.95rem 1.15rem; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; } .ds-socials a, .ds-pending { color: var(--color-ink, #161311); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.13em; text-decoration: none; text-transform: uppercase; } .ds-socials a:hover { color: var(--color-accent, #163a82); } .ds-socials a:focus-visible { outline: 2px solid var(--color-accent, #163a82); outline-offset: 3px; } .ds-note { margin-left: 0.35rem; color: var(--color-muted, #5c3330); font-size: 0.62rem; font-weight: 600; letter-spacing: 0.08em; }"
+    },
+    {
+      "name": "Skip link",
+      "kind": "button",
+      "refersTo": "skip-link",
+      "description": "Cobalt pill revealed on focus. It is chrome, not a tile.",
+      "html": "<a class=\"ds-skip\" href=\"#content\">Skip to content</a>",
+      "css": ".ds-skip { display: inline-block; border-radius: 999px; background: var(--color-accent, #163a82); color: var(--color-accent-ink, #f7f2ee); padding: 0.55rem 0.9rem; font-family: var(--font-body), Urbanist, ui-sans-serif, system-ui, sans-serif; font-size: 0.85rem; font-weight: 600; text-decoration: none; } .ds-skip:focus-visible { outline: 2px solid var(--color-accent, #163a82); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Brief-Pinned Bento",
+    "overview": "The home is one warm desk of public facts. A near-white canvas holds blush tiles that share one corner. Urbanist carries every line, from the tight statement to the wide-tracked bar. Depth is a tonal stack: warm paper, blush tile, a deeper blush well in the first project, and a single cobalt card for contact.\n\nThe statement is the largest type. Its roman lines are weight 700 and its italic line is weight 500. A line-drawn bloom sits in that card, and a smaller bloom sits in the bio. The portrait is an authored abstract plate until a photograph is set. Project titles turn cobalt on hover. The contact card is the only tile that is cobalt at rest, and it darkens on hover.\n\nA full-width bar sits over a three-column bento on the desktop. At a maximum width of 860px those regions stack in one column. Focus is a cobalt ring, and the ring turns cream on the cobalt card. The corner mark nudges and scrolling is smooth only when reduced motion is not requested.",
+    "keyCharacteristics": [
+      "Warm paper canvas, blush tiles, one cobalt action",
+      "Urbanist for display and body; italic only inside the statement",
+      "One tile radius of 1.75rem and a flat tonal stack",
+      "Three columns on the desktop, one column from 860px down",
+      "Cobalt focus ring; cream when the ring sits on the contact card"
+    ],
+    "rules": [
+      {
+        "name": "The One Cobalt Rule",
+        "body": "Cobalt is the contact surface, the text selection, the focus ring, and the hover of ink links. It does not fill a second tile.",
+        "section": "colors"
+      },
+      {
+        "name": "The Blush Field Rule",
+        "body": "Every resting tile uses the same blush. The deeper blush is only the project preview well.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Face Rule",
+        "body": "Urbanist is display and body. Statement lines that are italic are weight 500; statement lines that are roman are weight 700. The system-ui stack is the fallback, not a second face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracked Label Rule",
+        "body": "The bar, the nav, and the social strip are uppercase, weight 600, and widely tracked. Projects and About do not take a second visible heading inside their tiles.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Stack Rule",
+        "body": "At max-width 860px the page becomes one column in this order: bar, headline, portrait, projects, bio, contact, socials.",
+        "section": "layout"
+      },
+      {
+        "name": "The Tonal Stack Rule",
+        "body": "There is no shadow vocabulary. Depth is the canvas, the blush tile, and the preview well. The cobalt card is the surface that changes hue.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Shared Corner Rule",
+        "body": "The bar and every bento tile use 1.75rem. The preview well at 1.15rem and the project link at 1rem stay inside the rail.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Quiet Hover Rule",
+        "body": "Ink links turn cobalt. The contact tile darkens to pressed cobalt. No other hover color is defined.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** keep every resting tile on the blush, on the warm paper canvas, at a 1.75rem corner.",
+      "**Do** reserve cobalt for the contact tile, text selection, focus, and ink-link hover.",
+      "**Do** set italic statement lines in Urbanist italic at weight 500 and roman statement lines at weight 700.",
+      "**Do** stack the page from 860px down as bar, headline, portrait, projects, bio, contact, socials.",
+      "**Do** draw focus as a 2px ring, 3px outside the edge: cobalt on blush, cream on the contact tile.",
+      "**Do** gate the corner nudge and smooth scrolling behind a no-preference motion query."
+    ],
+    "donts": [
+      "**Don't** add a drop shadow, a second resting tile color, or a salmon accent.",
+      "**Don't** add another type family, and don't treat the system-ui fallback as the display face.",
+      "**Don't** put a visible heading inside the project rail or the bio tile.",
+      "**Don't** give a social item without a URL a fake href or a button fill.",
+      "**Don't** move the social strip out of the third column above the 860px stack."
+    ]
+  }
+}

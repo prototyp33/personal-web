@@ -1,44 +1,30 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Newsreader } from "next/font/google";
-import { SiteFooter } from "../components/layout/SiteFooter";
-import { SiteHeader } from "../components/layout/SiteHeader";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const newsreader = Newsreader({
+const urbanist = Urbanist({
   subsets: ["latin"],
   style: ["normal", "italic"],
-  variable: "--font-newsreader",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-urbanist",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Adrián Iraegui",
+  title: "Adrian Javier Iraegui",
   description:
-    "Ingeniería de datos e IA para decisiones de producto y de operación.",
+    "Data & Business Analyst in Barcelona. Grad in Management & Tech, skilled in Python, and AI-driven process optimization.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html
-      lang="es"
-      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
-    >
+    <html lang="en" className={urbanist.variable}>
       <body className="bg-canvas font-body text-body text-ink">
-        <div className="mx-auto w-full max-w-page px-gutter">
-          <SiteHeader />
-          <main>{children}</main>
-          <SiteFooter />
-        </div>
+        <a className="skip-link" href="#content">
+          Skip to content
+        </a>
+        {children}
       </body>
     </html>
   );
